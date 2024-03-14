@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/Prescaler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Prescaler
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/Prescaler.v:18]
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/Prescaler.v:26]
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/Prescaler.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reciver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XilinxProjekty/rs232v2/rs232.srcs/sources_1/new/transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XilinxProjekty/rs232v2/rs232.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
