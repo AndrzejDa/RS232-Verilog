@@ -1,9 +1,0 @@
-0.6
-2018.3
-Dec  7 2018
-00:33:28
-D:/XilinxProjekty/rs232/rs232.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
-D:/XilinxProjekty/rs232/rs232.srcs/sim_1/new/testbench.v,1710369236,verilog,,,,testbench,,,,,,,,
-D:/XilinxProjekty/rs232/rs232.srcs/sources_1/new/Prescaler.v,1710333852,verilog,,D:/XilinxProjekty/rs232/rs232.srcs/sources_1/new/receiver.v,,Prescaler,,,,,,,,
-D:/XilinxProjekty/rs232/rs232.srcs/sources_1/new/receiver.v,1710370445,verilog,,D:/XilinxProjekty/rs232/rs232.srcs/sources_1/new/rs232.v,,transceiver,,,,,,,,
-D:/XilinxProjekty/rs232/rs232.srcs/sources_1/new/rs232.v,1710365360,verilog,,D:/XilinxProjekty/rs232/rs232.srcs/sim_1/new/testbench.v,,rs232,,,,,,,,

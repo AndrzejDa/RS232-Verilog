@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 14.03.2024 13:31:23
-// Design Name: 
-// Module Name: transmitter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module transmitter(
     input clk_i,
@@ -27,7 +7,7 @@ module transmitter(
     output reg txd_o
     );
     
-    integer i = 1;
+    integer i = 0;
     integer state = 0;
     reg [0:9] final_data = 10'b0000000001;
 
@@ -39,24 +19,27 @@ module transmitter(
         begin
             if(rst_i) begin
                 state <= 0;
-            end else if(data != 8'b00000000) begin
-                final_data[1:8] <= data[1:8];
-                state <= 1;
-            end
-            case(state)
-                0: begin
-                    i <= 0;
-                    txd_o <= 1'b1;
+            end else if (clk_i) begin
+                if(data != 8'b00000000) begin
+                    final_data[1:8] <= data[1:8];
+                    state <= 1;
                 end
-                1: begin
-                    txd_o <= final_data[i];
-                    i <= i + 1;
-                    if(i == 10) begin
+                case(state)
+                    0: begin
+                        i <= 0;
                         txd_o <= 1'b1;
-                        state <= 0;
                     end
-                end
-            endcase
+                    1: begin
+                        txd_o <= final_data[i];
+                        i <= i + 1;
+                        if(i == 10) begin
+                            txd_o <= 1'b1;
+                            state <= 0;
+                        end
+                    end
+                endcase
+            end
         end
+       
         
 endmodule
